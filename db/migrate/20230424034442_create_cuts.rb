@@ -5,7 +5,8 @@ class CreateCuts < ActiveRecord::Migration[5.2]
       t.text :location
       t.text :alternative_name
       t.text :characteristics
-      t.text :dish
+      t.integer :dish_id
+      t.text :image
 
       t.timestamps
     end

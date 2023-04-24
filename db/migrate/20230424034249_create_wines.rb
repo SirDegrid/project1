@@ -4,7 +4,7 @@ class CreateWines < ActiveRecord::Migration[5.2]
       t.text :name
       t.text :region
       t.text :varietal
-      t.integer :dish_id
+      t.text :dish_id
       t.text :image_URL
 
       t.timestamps

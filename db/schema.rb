@@ -10,22 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_24_004010) do
+ActiveRecord::Schema.define(version: 2023_04_24_034612) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cuts", force: :cascade do |t|
     t.text "name"
-    t.text "location"
+    t.text "loction"
     t.text "alternative_name"
     t.text "characteristics"
-    t.text "dish"
+    t.integer "dish_id"
+    t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "cuts_dishes", force: :cascade do |t|
+  create_table "cuts_dishes", id: false, force: :cascade do |t|
     t.integer "cut_id"
     t.integer "dish_id"
   end
@@ -33,19 +34,24 @@ ActiveRecord::Schema.define(version: 2023_04_24_004010) do
   create_table "dishes", force: :cascade do |t|
     t.text "name"
     t.text "cuisine"
-    t.text "image_URL"
-    t.text "recipe_URL"
     t.integer "cut_id"
     t.integer "wine_id"
+    t.text "image_URL"
+    t.text "recipe_URL"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "dishes_wines", force: :cascade do |t|
+    t.integer "dish_id"
+    t.integer "wine_id"
   end
 
   create_table "wines", force: :cascade do |t|
     t.text "name"
     t.text "region"
     t.text "varietal"
-    t.integer "dish_id"
+    t.text "dish_id"
     t.text "image_URL"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
