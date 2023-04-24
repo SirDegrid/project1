@@ -1,2 +1,24 @@
-<h1>Cuts#show</h1>
-<p>Find me in app/views/cuts/show.html.erb</p>
+<h1> <%= @cut.name %> </h1>
+
+    <%= image_tag @cut.image, :class => 'feature' if @cut.image.present? %>
+        <ul>
+            <li>Name: <%= @cut.name %></li>
+            <li>Alternative names: <%= @cut.alternative_name unless @cut.alternative_name.nil? %></li>
+            <li>Location: <%= @cut.location %></li>
+            <li>Characteristics: <%= @cut.characteristics unless @cut.characteristics.nil? %></li>
+            <li>Classic dish:
+                <% @cut.dishes.each do |dish|%>
+                    <%= dish.name %>
+                <% end %>
+            </li>
+        </ul>
+             
+
+        <% @cut.dishes.each do |dish|%>
+            <%= link_to image_tag(dish.image_URL, :class => 'thumb'), dish %>
+            <% end %>
+
+        <div class="controls">
+            <%= link_to "Edit cut", edit_cut_path(@cut) %>
+            <%= link_to "Delete cut", @cut, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+        </div>

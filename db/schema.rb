@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2023_04_24_034612) do
 
   create_table "cuts", force: :cascade do |t|
     t.text "name"
-    t.text "loction"
+    t.text "location"
     t.text "alternative_name"
     t.text "characteristics"
     t.integer "dish_id"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2023_04_24_034612) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "dishes_wines", force: :cascade do |t|
+  create_table "dishes_wines", id: false, force: :cascade do |t|
     t.integer "dish_id"
     t.integer "wine_id"
   end
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2023_04_24_034612) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "wines_dishes", force: :cascade do |t|
+  create_table "wines_dishes", id: false, force: :cascade do |t|
     t.integer "wine_id"
     t.integer "dish_id"
   end

@@ -1,10 +1,10 @@
 Cut.destroy_all
-c1 = Cut.create(:name => 'Shin', :loction => 'Lower leg', :alternative_name => 'Shank, gravy beef', :characteristics => 'Lean, highly-worked, high connective tissue, slow cooked', :dish_id => 'Osso Buco',:image => 'https://www.thethreetomatoes.com/wp-content/uploads/2014/09/beef_shank.jpg')
+c1 = Cut.create(:name => 'Shin', :location => 'Lower leg', :alternative_name => 'Shank, gravy beef', :characteristics => 'Lean, highly-worked, high connective tissue, slow cooked', :dish_id => 'Osso Buco',:image => 'https://www.thethreetomatoes.com/wp-content/uploads/2014/09/beef_shank.jpg')
 
-c2 = Cut.create(:name => 'Eye Fillet', :loction => 'Lower back', :alternative_name => 'Filet Mignon, tenderloin', :characteristics => 'Lean, tender, mild flavour, best served rare', :dish_id => 'Steak Tartare',:image => 'https://cdn.shopify.com/s/files/1/0329/0972/1732/products/Eye-Fillet-Steak_grande.jpg?v=1581232328')
+c2 = Cut.create(:name => 'Eye Fillet', :location => 'Lower back', :alternative_name => 'Filet Mignon, tenderloin', :characteristics => 'Lean, tender, mild flavour, best served rare', :dish_id => 'Steak Tartare',:image => 'https://cdn.shopify.com/s/files/1/0329/0972/1732/products/Eye-Fillet-Steak_grande.jpg?v=1581232328')
 
 
-c3 = Cut.create(:name => 'Brisket', :loction => 'Breast', :characteristics => 'Tough, combination of fatty and lean meat, slow-cooked', :dish_id => 'Texas Brisket',:image => 'https://www.anglissmeats.com.au/wp-content/uploads/2018/10/brisket.jpg')
+c3 = Cut.create(:name => 'Brisket', :location => 'Breast', :characteristics => 'Tough, combination of fatty and lean meat, slow-cooked', :dish_id => 'Texas Brisket',:image => 'https://www.anglissmeats.com.au/wp-content/uploads/2018/10/brisket.jpg')
 
 
 Dish.destroy_all

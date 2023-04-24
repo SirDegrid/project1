@@ -34,6 +34,6 @@ class CutsController < ApplicationController
 
   private
   def artist_params
-    params.require(:cut).permit(:name, :loction, :alternative_name, :characteristics, :dish_id, :image)
+    params.require(:cut).permit(:name, :location, :alternative_name, :characteristics, :dish_id, :image)
   end
 end
