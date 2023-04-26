@@ -1,10 +1,9 @@
-<h1> <%= @cut.name %> </h1>
+<h2> <%= @cut.name %> </h2>
 
 <div class="grid-container">
     <div class="cuts-display">
         <%= image_tag @cut.image, :class => 'feature' if @cut.image.present? %>
             <ul>
-                <li>Name: <%= @cut.name %></li>
                 <% if @cut.alternative_name.present? %>
                     <li>Alternative name: <%= @cut.alternative_name %></li>
                 <% end %>

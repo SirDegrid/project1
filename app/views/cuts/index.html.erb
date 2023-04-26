@@ -1,4 +1,4 @@
-<h1>All Cuts</h1>
+<h2>All Cuts</h2>
 
 <% @cuts.each do |cut| %>
     <%= image_tag cut.image, :class => 'thumb' if cut.image.present? %>
@@ -8,4 +8,6 @@
             <li>Alternative name: <%= cut.alternative_name %></li>
         <% end %>
     </ul>
+
+
 <% end %>

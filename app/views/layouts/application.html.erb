@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Butcher</title>
+    <title>Beef Butcher</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Mukta:wght@200&display=swap');
+    </style>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div class="container">
+  <h1>Beef Butcher</h1>
     <nav>
-      <%= link_to "All cuts", cuts_path %>
-      <%= link_to "New cut", new_cut_path %>
-      |
-      <%= link_to "All dishes", dishes_path %>
-      <%= link_to "New dish", new_dish_path %>
-      |
-      <%= link_to "All wines", wines_path %>
-      <%= link_to "New wine", new_wine_path %>
+      <ul>
+        <li><%= link_to "All cuts", cuts_path %></li>
+        <li><%= link_to "New cut", new_cut_path %></li>
+        <li><%= link_to "All dishes", dishes_path %></li>
+        <li><%= link_to "New dish", new_dish_path %></li>
+        <li><%= link_to "All wines", wines_path %></li>
+        <li><%= link_to "New wine", new_wine_path %></li>
+      </ul>
     </nav>
+    <div class="container">
       <%= yield %>
       </div>
   </body>

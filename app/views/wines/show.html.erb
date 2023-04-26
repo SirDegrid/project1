@@ -1,10 +1,9 @@
-<h1><%= @wine.name %></h1>
+<h2><%= @wine.name %></h2>
 
 <div class="grid-container">
     <div class="wine-display">
         <%= image_tag @wine.image_URL, :class => 'feature' %>
         <ul>
-            <li>Name: <%= @wine.name %></li>
             <li>Region: <%= @wine.region %></li>
             <% if @wine.varietal.present? %>
                 <li>Varietal: <%= @wine.varietal %></li>

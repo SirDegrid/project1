@@ -1,10 +1,28 @@
 body {
     background-color: lemonchiffon;
+    font-family: 'Mukta', sans-serif;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-family: 'Castoro Titling', cursive;
+    letter-spacing: 8px;
+}
+
+h2 {
+    font-family: 'Castoro Titling', cursive;
+}
+
+h3 {
+    font-family: 'Castoro Titling', cursive;
 }
 
 .container {
     max-width: 960px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .thumb {
@@ -14,6 +32,7 @@ body {
 .feature {
     max-height: 30em;
 }
+
 
 label {
     display: block;
@@ -33,5 +52,32 @@ ul {
 
 .ul-dishes-index li{
     display: inline;
+}
+
+nav {
+    background-color: lightblue;
+    color: #fff;
+    margin-top: 5px;
+}
+  
+nav ul {
+    margin-right: 40px;
+    text-align: right;
+}
+  
+nav li {
+    display: inline-block;
+    margin-left: 10px;
+}
+  
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: lightgrey;
 }
 
