@@ -1,2 +1,17 @@
-<h1>Dishes#show</h1>
-<p>Find me in app/views/dishes/show.html.erb</p>
+<h1><%= @dish.name %></h1>
+
+<%= image_tag @dish.image_URL, :class => 'feature' %>
+
+<ul>
+    <li>Name: <%= @dish.name %></li>
+    <% if @dish.cut.present? %>
+    <li>Cut: <%= link_to @dish.cut.name, @dish.cut %></li>
+    <% end %>
+    <li>Cuisine: <%= @dish.cuisine %></li>
+     <%= link_to "Link to recipe", @dish.recipe_URL %>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit dish", edit_dish_path(@dish) %>
+    <%= link_to "Delete dish", @dish, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>

@@ -1,0 +1,18 @@
+<%= form_for @dish do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+    <%= f.label :cuisine %>
+    <%= f.text_field :cuisine %>
+
+    <%= f.label :image_URL %>
+    <%= f.url_field :image_URL %>
+
+    <%= f.label :recipe_URL %>
+    <%= f.url_field :recipe_URL %>
+
+    <%= f.label :cut_id %>
+    <%= f.select :cut_id, Cut.pluck(:name, :id), :include_blank => true %>
+
+    <%= f.submit %>
+<% end %>

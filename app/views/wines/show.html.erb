@@ -1,2 +1,18 @@
-<h1>Wines#show</h1>
-<p>Find me in app/views/wines/show.html.erb</p>
+<h1><%= @wine.name %></h1>
+
+<%= image_tag @wine.image_URL, :class => 'feature' %>
+
+<ul>
+    <li>Name: <%= @wine.name %></li>
+    <li>Region: <%= @wine.region %></li>
+    <li>Varietal: <%= @wine.varietal %></li>
+    
+    <% if @wine.dish.present? %>
+    <li>Pair with: <%= link_to @dish.wine.name, @wine.dish %></li>
+    <% end %>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit wine", edit_wine_path(@wine) %>
+    <%= link_to "Delete wine", @wine, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>

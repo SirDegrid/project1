@@ -1,0 +1,18 @@
+<%= form_for @wine do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+    <%= f.label :region %>
+    <%= f.text_field :region %>
+
+    <%= f.label :varietal %>
+    <%= f.text_field :varietal %>
+
+    <%= f.label :image_URL %>
+    <%= f.url_field :image_URL %>
+
+    <%= f.label :dish_id %>
+    <%= f.select :dish_id, Cut.pluck(:name, :id), :include_blank => true %>
+
+    <%= f.submit %>
+<% end %>
