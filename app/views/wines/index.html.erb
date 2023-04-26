@@ -2,4 +2,5 @@
 
 <% @wines.each do |wine|%>
     <%= link_to image_tag(wine.image_URL, :class => 'thumb'), wine %>
+    <p>Name: <%= link_to wine.name, wine %></p>
 <% end %>

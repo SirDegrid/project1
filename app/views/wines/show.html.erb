@@ -1,12 +1,30 @@
 <h1><%= @wine.name %></h1>
 
-<%= image_tag @wine.image_URL, :class => 'feature' %>
+<div class="grid-container">
+    <div class="wine">
+        <%= image_tag @wine.image_URL, :class => 'feature' %>
 
-<ul>
-    <li>Name: <%= @wine.name %></li>
-    <li>Region: <%= @wine.region %></li>
-    <li>Varietal: <%= @wine.varietal %></li>
-    
-</ul>
+        <ul>
+            <li>Name: <%= @wine.name %></li>
+            <li>Region: <%= @wine.region %></li>
+            <% if @wine.varietal.present? %>
+                <li>Varietal: <%= @wine.varietal %></li>
+            <% end %>
+        </ul>
+    </div>
 
+    <div class="food-pairings">
+        <h3>Pair with</h3>
+        <ul>
+            <% @wine.dishes.each do |dish|%>
+                <li><%= link_to image_tag(dish.image_URL, :class => 'thumb'), dish %></li>
+                <li><%= link_to (dish.name), dish %></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
 
+<div class="controls">
+    <%= link_to "Edit wine", edit_wine_path(@wine) %>
+    <%= link_to "Delete wine", @wine, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>

@@ -1,0 +1,32 @@
+body {
+    background-color: lemonchiffon;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.thumb {
+    height: 12em;
+}
+
+.feature {
+    max-height: 30em;
+}
+
+label {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}

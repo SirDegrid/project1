@@ -7,11 +7,14 @@
             <li>Location: <%= @cut.location %></li>
             <li>Characteristics: <%= @cut.characteristics unless @cut.characteristics.nil? %></li>
             <li>Classic dish:
-                <% @cut.dishes.each do |dish|%>
-                    <%= dish.name %>
-                <% end %>
-            </li>
         </ul>
+        <p> Feeling inspired?
+            <% @cut.dishes.each do |dish|%>
+            <% end %>
+        </p>
+                
+    
+        
              
 
         <% @cut.dishes.each do |dish|%>
