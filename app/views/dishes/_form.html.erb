@@ -14,5 +14,8 @@
     <%= f.label :cut_id %>
     <%= f.select :cut_id, Cut.pluck(:name, :id), :include_blank => true %>
 
+    <%= f.label :wine_id %>
+    <%= f.select :wine_id, Wine.pluck(:name, :id), :include_blank => true %>
+
     <%= f.submit %>
 <% end %>

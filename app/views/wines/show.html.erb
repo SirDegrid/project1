@@ -7,12 +7,6 @@
     <li>Region: <%= @wine.region %></li>
     <li>Varietal: <%= @wine.varietal %></li>
     
-    <% if @wine.dish.present? %>
-    <li>Pair with: <%= link_to @dish.wine.name, @wine.dish %></li>
-    <% end %>
 </ul>
 
-<div class="controls">
-    <%= link_to "Edit wine", edit_wine_path(@wine) %>
-    <%= link_to "Delete wine", @wine, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
-</div>
+

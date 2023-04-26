@@ -12,7 +12,7 @@
     <%= f.url_field :image_URL %>
 
     <%= f.label :dish_id %>
-    <%= f.select :dish_id, Cut.pluck(:name, :id), :include_blank => true %>
+    <%= f.select :dish_id, Dish.pluck(:name, :id), :include_blank => true %>
 
     <%= f.submit %>
 <% end %>

@@ -1,9 +1,5 @@
 <h1>All Wines</h1>
 
-<% @wines.each do |wine| %>
-    Name: <%= wine.name %>
-    <%= link_to image_tag(wine.image_URL, :class => 'thumb') %>
+<% @wines.each do |wine|%>
+    <%= link_to image_tag(wine.image_URL, :class => 'thumb'), wine %>
 <% end %>
-
-
-

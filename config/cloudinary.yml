@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dlshmgjpw
+  api_key: '538935448957672'
+  api_secret: 99G6ov51b1lsqB-5AuMvxxPe-S0
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dlshmgjpw
+  api_key: '538935448957672'
+  api_secret: 99G6ov51b1lsqB-5AuMvxxPe-S0
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dlshmgjpw
+  api_key: '538935448957672'
+  api_secret: 99G6ov51b1lsqB-5AuMvxxPe-S0
+  enhance_image_tag: true
+  static_file_support: false
