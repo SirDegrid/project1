@@ -4,18 +4,19 @@
 
 <ul>
     <li>Name: <%= @dish.name %></li>
-    <% if @dish.cut.present? %>
-        <li>Cut: <%= link_to @dish.cut.name, @dish.cut %></li>
-    <% end %>
-
-    <% if @dish.cut.present? %>
-    <li>Pair with:
-        <% @dish.wines.each do |wine|%>
+        <% if @dish.cut.present? %>
+            <li>Cut: <%= link_to @dish.cut.name, @dish.cut %></li>
+        <% end %>
+        
+        <% if @dish.cut.present? %>
+            <li>Pair with:
+            <% @dish.wines.each do |wine|%>
             <%= link_to (wine.name), wine %>
         <% end %>
     <% end %>
+    
     <li>Cuisine: <%= @dish.cuisine %></li>
-     <%= link_to "Link to recipe", @dish.recipe_URL %>
+        <%= link_to "Link to recipe", @dish.recipe_URL %>
 </ul>
 
 <div class="controls">

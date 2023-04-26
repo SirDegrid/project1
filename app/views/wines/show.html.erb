@@ -1,9 +1,8 @@
 <h1><%= @wine.name %></h1>
 
 <div class="grid-container">
-    <div class="wine">
+    <div class="wine-display">
         <%= image_tag @wine.image_URL, :class => 'feature' %>
-
         <ul>
             <li>Name: <%= @wine.name %></li>
             <li>Region: <%= @wine.region %></li>

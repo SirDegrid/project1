@@ -1,7 +1,7 @@
 <h1>All Dishes</h1>
 
-<% @dishes.each do |dish|%>
-    <%= link_to image_tag(dish.image_URL, :class => 'thumb'), dish %>
-    <p>Name: <%= link_to dish.name, dish %></p>
-<% end %>
-
+    <ul class="ul-dishes-index">
+        <% @dishes.each do |dish|%>
+           <li><%= link_to image_tag(dish.image_URL, :class => 'thumb'), dish %><%= link_to dish.name, dish %></li>
+        <% end %>
+    </ul>

@@ -4,6 +4,8 @@
     <%= image_tag cut.image, :class => 'thumb' if cut.image.present? %>
     <ul>
         <li>Name: <%= link_to cut.name, cut %></li>
-        <li>Alternative name: <%= cut.alternative_name %></li>
+        <% if cut.alternative_name.present? %>
+            <li>Alternative name: <%= cut.alternative_name %></li>
+        <% end %>
     </ul>
 <% end %>
