@@ -15,7 +15,11 @@
     <% end %>
     
     <li>Cuisine: <%= @dish.cuisine %></li>
-        <%= link_to "Link to recipe", @dish.recipe_URL %>
+
+    <% if @dish.recipe_URL.present? %>
+        <li><%= link_to "Recipe", @dish.recipe_URL, target: "_blank" %></li>
+    <% end %>
+        
 </ul>
 
 <div class="controls">

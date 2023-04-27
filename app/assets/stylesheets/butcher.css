@@ -1,5 +1,5 @@
 body {
-    background-color: lemonchiffon;
+    background-color: beige;
     font-family: 'Mukta', sans-serif;
 }
 
@@ -31,8 +31,10 @@ h3 {
 
 .feature {
     max-height: 30em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
-
 
 label {
     display: block;
@@ -55,9 +57,10 @@ ul {
 }
 
 nav {
-    background-color: lightblue;
+    background-color: darkblue;
     color: #fff;
     margin-top: 5px;
+    text-transform: uppercase;
 }
   
 nav ul {
@@ -68,6 +71,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 10px;
+    margin-right: 10px;
 }
   
 nav li a {
@@ -81,3 +85,42 @@ nav li a:hover {
     background-color: lightgrey;
 }
 
+.ul-dishes-index {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.dish-container {
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+}
+  
+.thumb {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.food-pairings h3 {
+    margin-left: 76px;
+}
+
+.food-pairings ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.food-pairings li {
+    text-align: center;
+    margin: 10px 0;
+}
+  
+
+
+  
