@@ -1,6 +1,11 @@
 <h2>All Wines</h2>
 
-<% @wines.each do |wine|%>
-    <%= link_to image_tag(wine.image_URL, :class => 'thumb'), wine %>
-    <p>Name: <%= link_to wine.name, wine %></p>
-<% end %>
+<div class="wines-container">
+  <% @wines.each do |wine| %>
+    <div class="wine">
+      <%= link_to image_tag(wine.image_URL, class: 'thumb'), wine %>
+      <br>
+      <%= link_to wine.name, wine %>
+    </div>
+  <% end %>
+</div>

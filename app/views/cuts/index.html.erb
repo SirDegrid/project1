@@ -1,5 +1,7 @@
 <h2>All Cuts</h2>
 
+<%= link_to image_tag "cow.png", :class => 'cow' %>
+
 <% @cuts.each do |cut| %>
     <%= image_tag cut.image, :class => 'thumb' if cut.image.present? %>
     <ul>

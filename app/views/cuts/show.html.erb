@@ -16,8 +16,9 @@
     <div class="cuts-dishes-display">
         <h3>Feeling inspired?</h3>
         <ul>
-            <li><% @cut.dishes.each do |dish|%>
-            <%= link_to image_tag(dish.image_URL, :class => 'thumb'), dish %></li>
+            <% @cut.dishes.each do |dish|%>
+            <li><%= link_to image_tag(dish.image_URL, :class => 'thumb'), dish %></li>
+            <li><%= link_to (dish.name), dish %></li>
             <% end %>
         </ul>
     </div>

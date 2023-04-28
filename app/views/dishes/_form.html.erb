@@ -15,7 +15,7 @@
     <%= f.select :cut_id, Cut.pluck(:name, :id), :include_blank => true %>
 
     <%= f.label :wine_id %>
-    <%= f.select :wine_id, Wine.pluck(:name, :id), :include_blank => true %>
+    <%= f.collection_check_boxes :wine_ids, Wine.all, :id, :name %>
 
     <%= f.submit %>
 <% end %>

@@ -33,7 +33,3 @@ d1.wines << w1
 d2.wines << w2
 d3.wines << w3
 
-puts "Dishes and Wines"
-w1.dishes << d1
-w2.dishes << d2
-w3.dishes << d3

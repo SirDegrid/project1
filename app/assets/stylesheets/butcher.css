@@ -86,14 +86,24 @@ nav li a:hover {
 }
 
 .ul-dishes-index {
-    list-style: none;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
   
 .dish-container {
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+}
+
+.wines-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.wine {
     text-align: center;
     margin: 10px;
     width: 200px;
@@ -120,7 +130,42 @@ nav li a:hover {
     text-align: center;
     margin: 10px 0;
 }
-  
+
+.cow {
+    position: fixed;
+    top: 13em;
+    right: 15%;
+    max-width: 40%;
+    min-width: 100px;
+}
+
+.cuts-dishes-display ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuts-dishes-display li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.cuts-dishes-display h3 {
+    margin-left: 20px;
+}
 
 
+.wine-pairings ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   
+.wine-pairings li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.wine-pairings h3 {
+    margin-left: 70px;;
+}

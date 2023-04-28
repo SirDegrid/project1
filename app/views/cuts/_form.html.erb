@@ -1,14 +1,15 @@
 <%= form_for @cut do |f| %>
-    <%=  f.label :name %>
+
+    <%= f.label :name %>
     <%= f.text_field :name %>
     
-    <%=  f.label :alternative_name %>
+    <%= f.label :alternative_name %>
     <%= f.text_field :alternative_name %>
     
-    <%=  f.label :characteristics %>
+    <%= f.label :characteristics %>
     <%= f.text_field :characteristics %>
 
-    <%=  f.label :image %>
+    <%= f.label :image %>
     <%= f.url_field :image %>
 
     <%= f.submit %>
