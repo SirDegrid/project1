@@ -135,8 +135,14 @@ nav li a:hover {
     position: fixed;
     top: 13em;
     right: 15%;
-    max-width: 40%;
+    max-width: 35%;
     min-width: 100px;
+}
+
+@media (max-width: 768px) {
+    .cow {
+      right: 10%;
+    }
 }
 
 .cuts-dishes-display ul {

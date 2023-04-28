@@ -1,25 +1,11 @@
-# README
+# Project 1 - Beef Butcher 
+A simple app created with Ruby on Rails. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## General Info
+This app designed to help users find classic dishes associated with different cuts of meat. The user can then find a suitable wine to pair with their dish selection. The database can be edited or new options added for cuts/dishes/wines. Photos of each item are displayed on page via hot-linking. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# project1
+## Technologies
+Project is created with:
+- Rails 5.2.8.1
+- CSS 
+- Bootstrap 5.2.3
